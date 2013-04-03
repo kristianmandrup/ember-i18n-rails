@@ -2,8 +2,6 @@
 
 Loosely Based on https://github.com/fnando/i18n-js of Nando Vieira
 
-__Version:__ 0.1
-
 ## Instalation:
 
 ### in Gemfile:
@@ -15,8 +13,17 @@ __Version:__ 0.1
     rake ember:i18n:setup
 
 ### in app/assets/javascript/application.js
+    //= require i18n/cldr_plurals
     //= require i18n/ember-i18n
     //= require i18n/translations
+
+Or try simply using
+
+    //= require ./i18n
+
+Or even
+
+    //= require_tree ./i18n
 
 ## Exporting locales:
 
